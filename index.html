@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+  <title>Spotify Homepage - Lucas Bargas</title>
+  <link rel="stylesheet" href="assets/css/app.min.css">
+
+  <!--seo-tags-->
+  <meta name="description" content="Esta aplicação é uma réplica desenvolvida por Lucas Bargas, a fins estudantis, da página inicial do Spotify. Foi utilizado TailwindCSS neste projeto.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spotify Homepage - Lucas Bargas">
+  <meta property="og:description" content="Esta aplicação é uma réplica desenvolvida por Lucas Bargas, a fins estudantis, da página inicial do Spotify. Foi utilizado TailwindCSS neste projeto.">
+  <meta property="og:url" content="">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header class="bg-black py-3">
+    <div class="app-container">
+      <div class="flex justify-between items-center text-white">
+        <figure>
+          <a href="">
+            <img class="inline-block h-7 lg:h-10" src="assets/imgs/spotify_logo.png" alt="Spotify Logo">
+          </a>
+        </figure>
+
+        <div class="flex items-center">
+          <nav class="lg:block hidden">
+            <ul class="flex items-center">
+              <li>
+                <a class="inline-block text-white font-bold py-4 px-5 hover:text-hoverspt" href="#premium">
+                  Premium
+                </a>
+              </li>
+  
+              <li>
+                <a class="inline-block text-white font-bold py-4 px-5 hover:text-hoverspt" href="#suporte">
+                  Suporte
+                </a>
+              </li>
+  
+              <li>
+                <a class="inline-block text-white font-bold py-4 px-5 hover:text-hoverspt" href="#baixar">
+                  Baixar
+                </a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="flex items-center gap-3 lg:gap-0 ml-4 relative after:content-[''] after:h-4 after:w-px after:bg-white after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:hidden after:lg:block">
+            <figure class="ml-8 cursor-pointer flex items-center gap-3 hover:text-hoverspt">
+              <img class="inline-block h-8 w-8 lg:h-11 lg:w-11 rounded-full" src="assets/imgs/user_photo.png" alt="User Photo">
+              <span class="font-bold hidden lg:block">Perfil</span>
+              <i class="bi bi-chevron-down text-xs hidden lg:block"></i>
+              <button><i class="bi bi-list text-white text-2xl block lg:hidden"></i></button>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="flex flex-col items-center bg-pink h-97 md:h-98 lg:h-99 xl:h-100">
+      <div class="app-container">
+        <div class="text-center pt-5">
+          <h1 class="font-bold text-2xl sm:text-4xl md:text-9xl md:leading-11 text-red">Seja Premium. Seja feliz.</h1>
+          <a 
+            class="button bg-red text-white mt-5 md:mt-11" 
+            href="">
+            Iniciar teste grátis
+          </a>
+          <p class="text-red text-xs mt-8 md:font-semibold">* Sujeito a Termos e Condições. Disponível apenas para usuários que ainda não experimentaram o Premium.</p>
+        </div>
+      </div>
+    </section>
+
+    <section 
+      class="h-480 md:h-600 bg-spotify-theme-moblie xl:bg-spotify-theme bg-banner-mobile xl:bg-banner bg-181% xl:bg-100% bg-purple-main bg-no-repeat flex items-center md:block"
+    >
+      <div class="app-container">
+        <div class='text-green-main text-center xl:text-left md:pt-124'>
+          <h1 class="text-3xl font-bold md:text-6xl">É música que você quer?</h1>
+          <h2 class="font-medium mt-7 md:mt-11 mb-8 md:mb-11 md:text-2xl">Ouça os melhores lançamentos do momento.</h2>
+          <a 
+            class="button bg-green-main text-purple-main" 
+            href="">
+            Acesse o web player
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black pt-20 pb-12">
+    <div class="app-container">
+      <div class="text-white flex flex-col lg:flex-row md:block lg:flex lg:justify-between">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-14">
+          <div>
+            <figure>
+              <a href="">
+                <img class="inline-block h-7 lg:h-10" src="assets/imgs/spotify_logo.png" alt="Spotify Logo">
+              </a>
+            </figure>
+          </div>
+  
+          <div class="flex flex-col md:flex-row gap-12 lg:gap-14">
+            <div class="md:flex-1 lg:pt-4">
+              <h3 class="text-gray text-xs font-bold uppercase mb-4">Empresa</h3>
+              <nav>
+                <ul class="flex flex-col">
+                  <li><a class="inline-block font-medium py-2 hover:text-hoverspt" href="#sobre">Sobre</a></li>
+                  <li><a class="inline-block font-medium py-2 hover:text-hoverspt" href="#empregos">Empregos</a></li>
+                  <li><a class="inline-block font-medium py-2 hover:text-hoverspt" href="#for-the-record">For the Record</a></li>
+                </ul>
+              </nav>
+            </div>
+    
+            <div class="md:flex-1 lg:pt-4">
+              <h3 class="text-gray text-xs font-bold uppercase mb-4">Comunidades</h3>
+              <nav>
+                <ul class="flex flex-col">
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#para-artistas">Para Artistas</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#desenvolvedores">Desenvolvedores</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#publicidade">Publicidade</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#investidores">Investidores</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#fornecedores">Fornecedores</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+    
+            <div class="md:flex-1 lg:pt-4">
+              <h3 class="text-gray text-xs font-bold uppercase mb-4">Links Úteis</h3>
+              <nav>
+                <ul class="flex flex-col">
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#suporte">Suporte</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#player-da-web">Player da Web</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#aplicativo-movel-gratis">Aplicativo móvel grátis</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-28 lg:pt-4 flex gap-4">
+          <figure class="flex items-center justify-center cursor-pointer w-11 h-11 rounded-full bg-dark-gray hover:text-hoverspt">
+            <i class="bi bi-instagram text-xl"></i>
+          </figure>
+
+          <figure class="flex items-center justify-center cursor-pointer w-11 h-11 rounded-full bg-dark-gray hover:text-hoverspt">
+            <i class="bi bi-twitter text-xl"></i>
+          </figure>
+
+          <figure class="flex items-center justify-center cursor-pointer w-11 h-11 rounded-full bg-dark-gray hover:text-hoverspt">
+            <i class="fa-brands fa-facebook-f text-xl"></i>
+          </figure>
+        </div>
+      </div>
+
+      <div class="pt-8 text-white opacity-80 text-center text-sm">
+        <p class="leading-6">Esta aplicação web é uma réplica desenvolvida por <a class="font-bold hover:underline" target="_blank" href="https://projetoslucasbargas.vercel.app/" rel="noopener noreferrer">Lucas Bargas</a> com base no layout da página inicial do <a class="font-bold hover:underline" target="_blank" href="https://www.spotify.com/br/" rel="noopener noreferrer">Spotify</a>. Porém, toda a codificação é própria.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="jsModal active px-4 md:px-0 flex justify-center items-center fixed left-0 top-0 z-50 w-full h-screen bg-modal">
+    <div class="modal-area animate-show-modal rounded-xl bg-white p-5 md:max-w-xl">
+      <div class="w-full flex justify-end">
+        <button class="jsCloseButton p-1">
+          <i class="fa-solid fa-xmark text-black text-2xl"></i>
+        </button>
+      </div>
+
+      <div class="modal-area-content text-center">
+        <h2 class="text-xl md:text-2xl font-bold">Lucas Bargas - Spotify Homepage</h2>
+
+        <p class="mt-4"><strong>Nota:</strong> Esta aplicação web é uma réplica desenvolvida por <a class="font-bold hover:underline" target="_blank" href="https://projetoslucasbargas.vercel.app/" rel="noopener noreferrer">Lucas Bargas</a> com base no layout da página inicial do <a class="font-bold hover:underline" target="_blank" href="https://www.spotify.com/br/" rel="noopener noreferrer">Spotify</a>. Porém, toda a codificação é própria.</p>
+
+        <div class="button-repo pt-2 pb-4">
+          <a class="font-bold hover:underline" target="_blank" href="https://github.com/LucasBargas/projetos_tailwindcss/tree/main/spotify_homepage">Clique aqui para visualizar o Repositório no GitHub</a>
+        </div>
+
+        <div class="close-button-two">
+          <button class="jsModalButton button bg-green-main text-white">
+            Visualizar projeto
+          </button>
+        </div>
+      </div>
+    </div><!--modal-area-->
+  </div><!--modal-->
+
+  <script src="assets/js/modal.js"></script>
+</body>
+</html>
